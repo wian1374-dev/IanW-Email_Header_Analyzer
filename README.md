@@ -29,7 +29,7 @@ This tool prioritizes Operational Security (OpSec) by safely defanging extracted
 1. **Clone the repository:**
 
 ```bash
-   git clone https://github.com/yourusername/Email-Forensic-Analyzer.git
+   git clone https://github.com/wian1374-dev/Email-Forensic-Analyzer.git
    cd Email-Forensic-Analyzer
    ```
 
