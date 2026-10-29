@@ -1,0 +1,13 @@
+# Environments
+.venv/
+env/
+
+# Secrets and Configurations
+.env
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Local Reports
+*.json
