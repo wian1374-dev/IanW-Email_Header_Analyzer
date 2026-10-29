@@ -33,14 +33,7 @@ This tool prioritizes Operational Security (OpSec) by safely defanging extracted
    cd Email-Forensic-Analyzer
    ```
 
-2. **Create a virtual environment (Recommended):**
-
-```bash
-   python -m venv .venv
-   source .venv/bin/activate  # On Windows use: .venv\\Scripts\\activate
-   ```
-
-3. **Install dependencies:**
+2. **Install dependencies:**
 
 ```bash
    pip install -r requirements.txt
@@ -53,11 +46,9 @@ To avoid passing API keys in the terminal every time, create a file named `.env`
 Add your API keys to the `.env` file:
 
 ```env
-IPINFO\_TOKEN=your\_ipinfo\_token\_here
-VT\_TOKEN=your\_virustotal\_token\_here
+IPINFO_TOKEN=your_ipinfo_token_here
+VT_TOKEN=your_virustotal_token_here
 ```
-
-*Note: The `.gitignore` file ensures your `.env` file is never uploaded to GitHub.*
 
 ## Usage
 
@@ -66,13 +57,13 @@ Run the script via the command line, pointing it to a raw `.eml` file.
 **Basic execution (using `.env` for keys):**
 
 ```bash
-python Email\_Header\_Analysis.py -f suspicious\_email.eml
+python Email_Header_Analysis.py -f suspicious_email.eml
 ```
 
 **Override or provide API keys directly via CLI:**
 
 ```bash
-python Email\_Header\_Analysis.py -f suspicious\_email.eml -a YOUR\_IPINFO\_KEY -vt YOUR\_VT\_KEY
+python Email_Header_Analysis.py -f suspicious_email.eml -a YOUR_IPINFO_KEY -vt YOUR_VT_KEY
 ```
 
 ### Command Line Arguments
@@ -85,7 +76,7 @@ python Email\_Header\_Analysis.py -f suspicious\_email.eml -a YOUR\_IPINFO\_KEY 
 
 ## Output Example
 
-The script prints a clean summary to the terminal and offers to save a highly detailed, timestamped JSON report (e.g., `email\_forensic\_report\_20261029\_141630.json`).
+The script prints a clean summary to the terminal and offers to save a highly detailed, timestamped JSON report (e.g., `email_forensic_report_20261029_141630.json`).
 
 ```text
 ALERT: Failed authentication checks detected: \['spf=fail', 'dmarc=fail']
